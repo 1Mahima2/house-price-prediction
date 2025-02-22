@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Enter House Details</h2>
+    <form action="/predict" method="post">
+        <label>Longitude:</label><input type="text" name="longitude" required><br>
+        <label>Latitude:</label><input type="text" name="latitude" required><br>
+        <label>Housing Median Age:</label><input type="text" name="housing_median_age" required><br>
+        <label>Total Rooms:</label><input type="text" name="total_rooms" required><br>
+        <label>Total Bedrooms:</label><input type="text" name="total_bedrooms" required><br>
+        <label>Population:</label><input type="text" name="population" required><br>
+        <label>Households:</label><input type="text" name="households" required><br>
+        <label>Median Income:</label><input type="text" name="median_income" required><br>
+        <label>Ocean Proximity:</label><input type="text" name="ocean_proximity" required><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
